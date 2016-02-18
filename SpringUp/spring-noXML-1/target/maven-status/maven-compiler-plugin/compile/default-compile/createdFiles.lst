@@ -1,0 +1,5 @@
+com/twang/usersController/UserController.class
+com/twang/AppInitializer.class
+com/twang/springConfig/users/SpringUserConfig.class
+com/twang/users/User.class
+com/twang/springConfig/SpringRootConfig.class
