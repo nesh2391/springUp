@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neshant</title>
+  <!--  <base href="/">-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/personalWebsite/bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/personalWebsite/src/styles/footer.css">
+    <link rel="stylesheet" href="/personalWebsite/src/styles/general.css">
+    <link rel="stylesheet" href="/personalWebsite/src/styles/header.css">
+    <link rel="stylesheet" href="/personalWebsite/src/styles/home.css">
+    <!-- endinject -->
+</head>
+<body ng-app="personalWebsite">
+
+<!-- bower:js -->
+<script src="/personalWebsite/bower_components/angular/angular.js"></script>
+<script src="/personalWebsite/bower_components/jquery/dist/jquery.js"></script>
+<script src="/personalWebsite/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="/personalWebsite/bower_components/angular-route/angular-route.js"></script>
+<script src="/personalWebsite/bower_components/angular-messages/angular-messages.js"></script>
+<!-- endinject -->
+
+<!-- inject:js -->
+<script src="/personalWebsite/src/app/app.js"></script>
+<script src="/personalWebsite/src/app/projects.js"></script>
+<script src="/personalWebsite/src/app/controller/DetailsController.js"></script>
+<script src="/personalWebsite/src/app/controller/LoginController.js"></script>
+<script src="/personalWebsite/src/app/controller/landing-page-controller.js"></script>
+<!-- endinject -->
+<div class="container">
+<!--    <header  ng-controller="HeaderController as headVm">
+        <div ng-include=" headVm.Header"></div>
+    </header>-->
+    <section ng-view></section>
+    <!--<footer  ng-controller="FooterController as footerVm" >
+        <div ng-include=" footerVm.Footer"></div>
+    </footer>-->
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+body{
+    font-family: "Raleway";
+}
+.mainImage{
+    height:260px;
+    width:160px;
+}
+.landingMessage{
+    text-align:center;
+}
+.button{
+    width: 100%;
+    padding: 0;
+    border:none;
+    background: none;
+}
+.headerColor{
+    background-color: #F5F5DC;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+
+.mainWrapper{
+    min-height: 550px;
+}
+#cardLable{
+    display:block;
+}
+#cardImageComponent{
+    display:inline-block;
+     vertical-align:middle;
+}
+#cardLableComponent{
+    display: inline-block;
+    vertical-align:middle;
+    width:90%;
+}
+.error p{
+    color: #6f1400;
+}
