@@ -84,36 +84,20 @@ function LoginController()
             LoginVm.cardLogo="Default-logo.png";
     }
 
-
-    //Egen code calculator
     LoginVm.number1='';
     LoginVm.numberRes='';
     LoginVm.numberStr='';
     var operator='';
-    var status=true;
     LoginVm.testFunction=function(num)
     {
-
-        if(!status)
-        {
-
-            resetSystem();
-            status=true;
-        }
 
         if (/\d/.test(parseInt(num))) {
             LoginVm.numberRes=LoginVm.numberRes+num;
             LoginVm.numberStr=LoginVm.numberStr+num;
         }
         else{
-            if(LoginVm.numberRes == '' )
-            {
-                LoginVm.numberStr='binary not supported';
-                status=false;
-            }
             if(operator!='' && num!='=' )
             {
-                console.log('1');
                 resetSystem();
             }
             else if(num=='+')
@@ -146,7 +130,6 @@ function LoginController()
                         if(parseInt(LoginVm.numberRes)==0)
                         {
                             LoginVm.numberStr='Zero error';
-                            status=false;
                             break;
                         }
                         LoginVm.numberStr=parseInt(LoginVm.number1)/parseInt(LoginVm.numberRes);
@@ -165,7 +148,6 @@ function LoginController()
         LoginVm.number1='';
         LoginVm.numberRes='';
         LoginVm.numberStr='';
-        operator='';
     }
     var storeNumber1=function(num)
     {
@@ -192,4 +174,3 @@ function recurringPaterns(string,pattern) {
 
    return resultList;
 }
-
